@@ -1,0 +1,66 @@
+$colors:(
+    back: hsl(200, 70%, 70%),
+    item: hsl(200, 70%, 50%),
+    add: hsl(150, 50%, 50%)
+);
+
+@function color($color-name){
+    @return map-get($colors, $color-name)
+}
+
+$phone: 375px;
+$desktop: 1200px;
+$tab: 700px;
+
+body{
+    background-color: color(back);
+    font-family:'lucida sans unicode'
+}
+
+#container{
+  @media screen and (max-width: $desktop) {
+    width: 400px;
+  }
+  @media screen and (max-width: $tab){
+      width: 80%;
+  }
+  @media screen and (max-width: $phone) {
+    width: 90%
+  }
+    margin: auto;
+}
+
+.heading{
+    form{
+        display: flex;
+        justify-content: space-around;
+    }
+    input{
+        width: 70%;
+        border: 1px solid white;
+        padding: 10px;
+    }
+    button{
+        width: 20%;
+        background-color: white;
+        border: none;
+        padding: 10px;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: color(add)
+    }
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    li{
+        background-color: color(item);
+        margin: 10px;
+        padding: 10px;
+    }
+    li:hover{
+        cursor: pointer;
+    }
+}

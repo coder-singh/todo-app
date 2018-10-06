@@ -1,0 +1,116 @@
+body {
+  background-color: #7dc4e8;
+  font-family: 'Nunito', 'lucida sans unicode';
+  margin: 0;
+}
+
+#banner{
+  margin: 0;
+  color: white;
+  background-color: hsl(340, 90%, 65%);
+}
+
+#container {
+  margin: auto;
+}
+
+
+.heading form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.heading input {
+  width: 70%;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.heading button {
+  width: 20%;
+  background-color: white;
+  border: none;
+  padding: 10px;
+}
+
+.heading button:hover {
+  cursor: pointer;
+  background-color: #40bf80;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: hsl(220, 60%, 40%);
+  margin: 10px;
+  padding: 10px;
+  color: white;
+}
+
+ul li:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1400px) {
+  #banner{
+    height: 200px;
+  }
+  #banner #title{
+    font-size: 40px;
+    margin: 0;
+    padding: 50px 0px 0 80px;
+  }
+  #banner #desc{
+    margin: 0;
+    padding: 10px 0px 0 80px;
+  }
+  #container {
+    margin-top: 50px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #banner{
+    height: 150px;
+  }
+  #banner #title{
+    font-size: 35px;
+    margin: 0;
+    padding: 40px 0px 0 70px;
+  }
+  #banner #desc{
+    margin: 0;
+    padding: 10px 0px 0 70px;
+  }
+  #container {
+    margin-top: 30px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #banner{
+    height: 120px;
+  }
+  #banner #title{
+    font-size: 28px;
+    margin: 0;
+    padding: 30px 0px 0 30px;
+  }
+  #banner #desc{
+    font-size: 13px;
+    margin: 0;
+    padding: 8px 0px 0 30px;
+  }
+  #container {
+    margin-top: 20px;
+    width: 90%;
+  }
+}
