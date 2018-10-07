@@ -8,8 +8,16 @@ class TodoItems extends React.Component{
     }
 
     createTasks(item){
-        return <li onClick = {() => this.delete(item.key)}
-        key={item.key}>{item.text}</li>
+        return (
+            <li key={item.key}>
+                <span>
+                    {item.text}
+                </span>
+                <span id="red" onClick = {() => this.delete(item.key)} >
+                    <i class="fa fa-trash"  ></i>
+                </span>
+            </li>
+        );
     }
     render(){
         var todoEntries = this.props.entries;

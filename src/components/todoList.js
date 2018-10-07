@@ -44,7 +44,7 @@ class TodoList extends React.Component{
                         <input ref={(a) => this._globalTextVariable = a}
                                 placeholder="Write your task here ...">
                         </input>
-                        <button type="submit">Add</button>
+                        <button type="submit"><i class="fa fa-pencil"></i></button>
                     </form>
                 </div>
                 <TodoItems entries = {this.state.items}
